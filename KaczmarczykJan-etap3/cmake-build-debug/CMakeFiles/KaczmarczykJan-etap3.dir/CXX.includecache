@@ -1,0 +1,68 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Kontener.h
+iostream
+-
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Magazyn.cpp
+iostream
+-
+Magazyn.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Magazyn.h
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Magazyn.h
+Produkt.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Produkt.h
+Paleciak.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Paleciak.h
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/ObslugaMagazynu.cpp
+iostream
+-
+string
+-
+ObslugaMagazynu.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/ObslugaMagazynu.h
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/ObslugaMagazynu.h
+Magazyn.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Magazyn.h
+Kontener.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Kontener.h
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Paleciak.cpp
+Paleciak.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Paleciak.h
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Paleciak.h
+vector
+-
+Produkt.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Produkt.h
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Produkt.cpp
+iostream
+-
+Produkt.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Produkt.h
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/Produkt.h
+iostream
+-
+
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/main.cpp
+iostream
+-
+thread
+-
+fstream
+-
+ObslugaMagazynu.h
+C:/Users/6trze/Documents/Studia 3 semestr/C++/KaczmarczykJan-etap3/ObslugaMagazynu.h
+

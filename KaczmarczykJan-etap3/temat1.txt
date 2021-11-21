@@ -1,0 +1,31 @@
+TEMAT NR 1 - Magazyn
+Jan Kaczmarczyk
+
+=====1 ETAP=====
+W pliku main.cpp znajdują się instrukcje, które odpowiadają za zarządzanie programem. Wypisane zostaje menu z opcjami wyboru co użytkownik chce zrobić. Następnie uruchamiany jest switch, który w zależności od wyboru uruchamia odpowiednią funkcję z modułu ObslugaMagazynu.
+
+W pliku ObslugaMagazynu.cpp znajdują sie implementacje funkcji obsługujących magazyn oraz wczytujących string i int z klawiatury. Funkcja dodanieTowaru przyjmuje za parametr obiekt typu Magazyn, tworzy obiekt Towar i za pomocą odpowiedniej metody dodaje towar do Magazynu. Funkcje przyjecieTowaru oraz odbiorTowaru wczytują indeks oraz ilość z klawiatury, dokonują kontroli tych zmiennych, uruchamiają odpowiednie metody (przyjmij lub zabierz) oraz wypisują aktualny stan Magazynu.
+
+W pliku Towar.h znajdują się deklaracje klas Towar oraz Magazyn. Postanowiłem obydwie klasy umieścić w jednym pliku by uniknąć pętli, ponieważ Towar i Magazyn korzystają między sobą ze swoich metod i atrybutów.
+
+Natomiast implementacje klas znajdują się każda w oddzielnym pliku .cpp.
+
+=====2 ETAP=====
+Magazyn, Paleciak i Produkt(wraz z klasami dziedziczącymi) zostały rozdzielone do poszczególnych plików .h i .cpp. 
+
+W pliku Magazyn.h znajduje się deklaracja klasy Magazyn a pliku Magazyn.cpp są implementacje metod tej klasy. 
+
+W pliku Paleciak.h znajduje się deklaracja klasy Paleciak a pliku Paleciak.cpp są implementacje metod tej klasy. 
+
+Plik Produkt.h zawiera klasę abstrakcyjną Produkt oraz dziedziczące po niej klasy Towar, Towar_Sypki i Towar_Ciekly. W pliku .cpp o tej samej nazwie znajdują się implementacje metod dla poszczególnych klas dziedziczących po Produkt.
+
+Moduł Obsługi Magazynu został poszerzony o funkcje interakcji między Magazynem a Paleciakiem oraz funkcję wypisującą wszystkie stworzone magazyny. Dodatkowo w funkcji dodającej towar został stworzony switch alokujący wybrany typ produktu na wskaźnik do produktu.
+
+Plik main.cpp został poszerzony o tworzenie wielu magazynów oraz menu wyboru magazynu, po wybraniu magazynu pojawia się stare menu pozwalające dodać, przyjąć, odebrać towar poszerzone jednak o funkcje związane z paleciakiem.
+
+Dla większej czytelności stworzyłem funkcje czekającą 3 sekundy po wykonaniu akcji z magazynu.
+
+=====3 ETAP=====
+Do programu został dodany nowy plik Kontener.h, który zawiera klasę Kontener będącą klasą szablonową. Obsługa wyjątków została dodana w przypadku przekroczenia indeksu w kontenerze oraz w funkcji wydajPaleciak należącej do Magazynu w przypadku podania ujemnej ilości produktów które mają być przeniesione do Paleciaka.
+
+Poprawiłem jeszcze funkcje czytające i konwertujące string na int i double. Teraz zamiast atoi użyte jest strtol a zamiast atof użyte jest strtod.
